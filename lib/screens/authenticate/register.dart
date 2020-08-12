@@ -62,7 +62,7 @@ class _RegisterState extends State<Register> {
               TextFormField(
                   decoration: InputDecoration(hintText: 'Password'),
                   validator: (val) => val.length < 6
-                      ? 'Enter an password at least 6 characters long'
+                      ? 'Enter a password at least 6 characters long'
                       : null,
                   obscureText: true,
                   onChanged: (val) {
