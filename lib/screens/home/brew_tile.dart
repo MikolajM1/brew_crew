@@ -3,6 +3,7 @@ import 'package:brew_crew/models/brew.dart';
 
 class BrewTile extends StatelessWidget {
   final Brew brew;
+
   BrewTile({this.brew});
 
   @override
@@ -13,6 +14,7 @@ class BrewTile extends StatelessWidget {
         margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
         child: ListTile(
           leading: CircleAvatar(
+            backgroundImage: AssetImage('assets/coffee_icon.png'),
             radius: 25.0,
             backgroundColor: Colors.brown[brew.strength],
           ),
